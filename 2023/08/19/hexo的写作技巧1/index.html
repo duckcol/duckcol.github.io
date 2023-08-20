@@ -25,8 +25,10 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="在使用markdown与hexo时踩过的坑">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/p1.jpg">
+<meta property="og:image" content="https://i0.hdslb.com/bfs/article/3b3950e54faa61de383e1e8c8b8ea5309d91682d.jpg@1256w_2232h_!web-article-pic.webp">
 <meta property="article:published_time" content="2023-08-19T09:41:21.000Z">
-<meta property="article:modified_time" content="2023-08-19T10:13:32.919Z">
+<meta property="article:modified_time" content="2023-08-20T03:58:53.622Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="tech">
@@ -34,6 +36,7 @@
 <meta property="article:tag" content="写作">
 <meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/p1.jpg">
     
     
     <!--- Icon Part-->
@@ -329,8 +332,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-08-19 18:13:32</span>
-            <span class="mobile">2023-08-19 18:13:32</span>
+            <span class="desktop">2023-08-20 11:58:53</span>
+            <span class="mobile">2023-08-20 11:58:53</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -397,7 +400,47 @@
         
 
         <div class="article-content markdown-body">
-            <h2 id="hexo的写作技巧1"><a href="#hexo的写作技巧1" class="headerlink" title="hexo的写作技巧1"></a>hexo的写作技巧1</h2><h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><h3 id="front-matter的使用"><a href="#front-matter的使用" class="headerlink" title="front-matter的使用"></a>front-matter的使用</h3><h3 id="图片的引用"><a href="#图片的引用" class="headerlink" title="图片的引用"></a>图片的引用</h3>
+            <h2 id="hexo的写作技巧1"><a href="#hexo的写作技巧1" class="headerlink" title="hexo的写作技巧1"></a>hexo的写作技巧1</h2><h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><p>对于创建文章，可在“根目录“中用 <code>Git Bash</code>输入</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [post] &lt;post title&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>为什么不在本地根目录下创建新markdown？</p>
+<blockquote>
+<p>这里涉及到了网页编码的知识，详情请自行搜索”网页编码“<br>总之这样可以避免文件的编码与框架不一致进而导致显示乱码的问题</p>
+</blockquote>
+<h3 id="front-matter的使用"><a href="#front-matter的使用" class="headerlink" title="front-matter的使用"></a>front-matter的使用</h3><p>具体可看此处<br><a class="link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter" >https://hexo.io/zh-cn/docs/front-matter <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br>我本人目前所使用的格式如下</p>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">example1</span></span><br><span class="line"><span class="attr">dete:</span> <span class="string">YY-MM-DD</span> <span class="string">hh:mm:ss</span></span><br><span class="line"><span class="string">tags：</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">example2</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">example3</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">example4</span></span><br><span class="line"><span class="attr">excerpt:</span> <span class="string">&quot;this the profile of the post&quot;</span></span><br><span class="line"><span class="attr">thumbnail:</span> <span class="string">&quot;https://i0.hdslb.com/bfs/article/3b3950e54faa61de383e1e8c8b8ea5309d91682d.jpg@1256w_2232h_!web-article-pic.webp&quot;</span></span><br></pre></td></tr></table></figure></div>
+<p>front-matter的写作请遵循yaml的规范</p>
+<p>教训:<em><strong>记得空格</strong></em></p>
+<h3 id="图片的引用"><a href="#图片的引用" class="headerlink" title="图片的引用"></a>图片的引用</h3><p>图片引用有两类：</p>
+<ul>
+<li>本地引用</li>
+<li>外链引用</li>
+</ul>
+<h4 id="本地引用"><a href="#本地引用" class="headerlink" title="本地引用"></a>本地引用</h4><p>把图片文件放入<code>本地根目录&gt;source&gt;img</code> </p>
+<p>img是我自己命名的你，写啥都行，总之要在以上路径下</p>
+<p>代码如下：</p>
+<div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">这是图片</span>](<span class="link">/img/p1.jpg &quot;Magic Gardens&quot;</span>)</span><br></pre></td></tr></table></figure></div>
+<p>效果如下：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/img/p1.jpg"
+                      alt="这是图片" title="Magic Gardens"
+                ></p>
+<blockquote>
+<p>我个人不太推荐这个方式，图片的大小与文字相比比较大，会拖慢网站的加载速度，我更加喜欢用外链的方式。</p>
+</blockquote>
+<h4 id="外链引用"><a href="#外链引用" class="headerlink" title="外链引用"></a>外链引用</h4><p>代码如下：</p>
+<div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">夜晚城市</span>](<span class="link">https://i0.hdslb.com/bfs/article/3b3950e54faa61de383e1e8c8b8ea5309d91682d.jpg@1256w_2232h_!web-article-pic.webp</span>)</span><br></pre></td></tr></table></figure></div>
+
+<p>效果如下：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://i0.hdslb.com/bfs/article/3b3950e54faa61de383e1e8c8b8ea5309d91682d.jpg@1256w_2232h_!web-article-pic.webp"
+                      alt="夜晚城市"
+                ></p>
+<h3 id="语言的使用"><a href="#语言的使用" class="headerlink" title="语言的使用"></a>语言的使用</h3><p>语言文字的显示依托于其背后的编码，不同语言哪怕其符号一样，但编码是不同的。<br>对于marldown代码输入，请使用英文，否则会无法识别</p>
+
         </div>
 
         
@@ -409,7 +452,7 @@
         <li><strong>Created at:</strong> 2023-08-19 17:41:21</li>
         
             <li>
-                <strong>Updated at:</strong> 2023-08-19 18:13:32
+                <strong>Updated at:</strong> 2023-08-20 11:58:53
             </li>
         
         <li>
@@ -484,7 +527,7 @@
     <div class="post-toc">
         <div class="toc-title">On this page</div>
         <div class="page-title">hexo的写作技巧1</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo%E7%9A%84%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A71"><span class="nav-text">hexo的写作技巧1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-text">创建文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#front-matter%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">front-matter的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E7%9A%84%E5%BC%95%E7%94%A8"><span class="nav-text">图片的引用</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo%E7%9A%84%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A71"><span class="nav-text">hexo的写作技巧1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-text">创建文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#front-matter%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">front-matter的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E7%9A%84%E5%BC%95%E7%94%A8"><span class="nav-text">图片的引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%AD%E8%A8%80%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">语言的使用</span></a></li></ol></li></ol>
 
     </div>
 </div>
