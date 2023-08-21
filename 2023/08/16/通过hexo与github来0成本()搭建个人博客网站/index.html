@@ -514,50 +514,6 @@
 
 
         
-            <div class="comment-container">
-                <div class="comments-container pjax">
-    <div id="comment-anchor"></div>
-    <div class="comment-area-title">
-        <i class="fa-solid fa-comments"></i>&nbsp;Comments
-    </div>
-    
-
-        
-            
- 
-    <div id="waline"></div>
-    <script type="module"  data-swup-reload-script>
-        import { init } from 'https://evan.beee.top/js/waline.mjs';
-
-        function loadWaline() {
-            init({
-                el: '#waline',
-                serverURL: 'https://wailne-blog.vercel.app/',
-                lang: 'zh-CN',
-                dark: 'body[class~="dark-mode"]',
-                requiredMeta: ['nick','mail'], // cannot customize by theme config, change it yourself
-            });
-        }
-
-        if ('true') {
-            const loadWalineTimeout = setTimeout(() => {
-                loadWaline();
-                clearTimeout(loadWalineTimeout);
-            }, 1000);
-        } else {
-            window.addEventListener('DOMContentLoaded', loadWaline);
-        }
-        
-    </script>
-
-
-
-        
-    
-</div>
-
-            </div>
-        
     </div>
 
     
@@ -658,10 +614,6 @@
         
 
         <!-- go comment -->
-        
-            <li class="go-comment">
-                <i class="fa-regular fa-comments"></i>
-            </li>
         
     </ul>
 </div>
