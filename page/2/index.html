@@ -13,18 +13,16 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/tags/"/>
+    <link rel="canonical" href="http://example.com/page/2/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
         <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://example.com/tags/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-08-15T13:51:47.000Z">
-<meta property="article:modified_time" content="2023-08-15T13:51:47.319Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
     
@@ -37,8 +35,6 @@
     <!--- Page Info-->
     
     <title>
-        
-            Tags -
         
         ColaDuck&#39;s Blog
     </title>
@@ -109,6 +105,39 @@
     
 
     
+        <style>
+    .home-article-item,
+    .sidebar-links,
+    .sidebar-content,
+    a.page-number,
+    a.extend,
+    .sidebar-links .links:hover,
+    .right-bottom-tools,
+    footer.footer {
+        background-color: var(--background-color-transparent-80) !important;
+    }
+    .right-bottom-tools:hover,
+    a.page-number:hover,
+    a.extend:hover {
+        background-color: var(--primary-color) !important;
+    }
+    .site-info,
+    .home-article-sticky-label {
+        background-color: var(--background-color-transparent-15) !important;
+    }
+    .home-article-sticky-label {
+        backdrop-filter: none !important;
+    }
+    .home-banner-background {
+        filter: blur(15px);
+    }
+</style>
+
+<div class="home-banner-background">
+</div>
+
+
+    
 
     <div class="main-content-container">
         
@@ -120,9 +149,9 @@
         <div class="left">
             
             <a class="logo-title" href="/">
-                
+                <h1>
                 ColaDuck&#39;s Blog
-                
+                </h1>
             </a>
         </div>
 
@@ -134,7 +163,7 @@
                         
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="" 
+                                <a class="active" 
                                     href="/"  >
                                     
                                         
@@ -254,7 +283,7 @@
             
                 
                     <li class="drawer-navbar-item flex-center">
-                        <a class="" 
+                        <a class="active" 
                         href="/"  >
                              
                                 
@@ -359,170 +388,190 @@
         <div class="main-content-body">
 
             
+                <div class="home-sidebar-container">
+    <div class="sticky-container">
+        
+            
+                <div class="sidebar-links">
+                    <div class="site-info">
+                        <div class="site-name">ColaDuck&#39;s Blog</div>
+                        
+                            <div class="announcement">
+                                随便看看吧!Get Easy!
+                            </div>
+                        
+                    </div>
+                    
+                        
+                            
+                                <a class="links" href="/shuoshuo/">
+                                    
+                                        <i class="fa-solid fa-walkie-talkie icon-space"></i>
+                                    
+                                    <span class="link-name">Shuoshuo</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/archives">
+                                    
+                                        <i class="fa-regular fa-archive icon-space"></i>
+                                    
+                                    <span class="link-name">Archives</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/tags">
+                                    
+                                        <i class="fa-regular fa-tags icon-space"></i>
+                                    
+                                    <span class="link-name">Tags</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/categories">
+                                    
+                                        <i class="fa-regular fa-folder icon-space"></i>
+                                    
+                                    <span class="link-name">Categories</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/flinks/">
+                                    
+                                        <i class="fa-solid fa-link icon-space"></i>
+                                    
+                                    <span class="link-name">flinks</span>
+                                </a>
+                            
+                        
+                    
+                </div>
+            
+            <div class="sidebar-content"  marginTop >
+                <div class="avatar">
+                    <img src="/images/my_icon.jpg">
+                </div>
+                <div class="author">
+                    <div class="name">Coladuck</div>
+                    
+                </div>
+                <div class="statistics">
+                    <a class="item" href="/tags">
+                        <div class="number">24</div>
+                        <div class="label">Tags</div>
+                    </a>
+                    <a class="item" href="/categories">
+                        <div class="number">5</div>
+                        <div class="label">Categories</div>
+                    </a>
+                    <a class="item" href="/archives">
+                        <div class="number">11</div>
+                        <div class="label">Posts</div>
+                    </a>
+                </div>
+            </div>
+        
+
+    </div>
+</div>
+
+            
 
             <div class="main-content">
 
                 
+                    <div class="home-content-container">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+
+                
                     
-<div class="tagcloud-container">
-	
-	<div class="tagcloud-header">
-		<h1 style="margin: 15px 5px; margin-bottom: 30px">Tags</h1>
-	</div>
-	<div class="tagcloud-content">
-		<ul class="tag-list" data-show-value="true">
-			
-			<li>
-				<a data-weight="1" href="/tags/some-thoughts/"
-					><i class="fa-solid fa-hashtag"></i>some thoughts</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/demo/"
-					><i class="fa-solid fa-hashtag"></i>demo</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="3" href="/tags/hexo/"
-					><i class="fa-solid fa-hashtag"></i>hexo</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/record/"
-					><i class="fa-solid fa-hashtag"></i>record</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="5" href="/tags/tech/"
-					><i class="fa-solid fa-hashtag"></i>tech</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/redefine/"
-					><i class="fa-solid fa-hashtag"></i>redefine</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/写作/"
-					><i class="fa-solid fa-hashtag"></i>写作</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/网络/"
-					><i class="fa-solid fa-hashtag"></i>网络</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/github-page/"
-					><i class="fa-solid fa-hashtag"></i>github page</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/cloudflare/"
-					><i class="fa-solid fa-hashtag"></i>cloudflare</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/cloudflare-page/"
-					><i class="fa-solid fa-hashtag"></i>cloudflare page</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/原神，启动！/"
-					><i class="fa-solid fa-hashtag"></i>原神，启动！</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/genshin/"
-					><i class="fa-solid fa-hashtag"></i>genshin</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/Game/"
-					><i class="fa-solid fa-hashtag"></i>Game</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/entertainment/"
-					><i class="fa-solid fa-hashtag"></i>entertainment</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="3" href="/tags/thought/"
-					><i class="fa-solid fa-hashtag"></i>thought</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/storytelling/"
-					><i class="fa-solid fa-hashtag"></i>storytelling</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/self/"
-					><i class="fa-solid fa-hashtag"></i>self</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/生活记录/"
-					><i class="fa-solid fa-hashtag"></i>生活记录</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="2" href="/tags/感想/"
-					><i class="fa-solid fa-hashtag"></i>感想</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/硬盘/"
-					><i class="fa-solid fa-hashtag"></i>硬盘</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/C/"
-					><i class="fa-solid fa-hashtag"></i>C++</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/learning-log/"
-					><i class="fa-solid fa-hashtag"></i>learning log</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/diary/"
-					><i class="fa-solid fa-hashtag"></i>diary</a
-				>
-			</li>
-			
-		</ul>
-	</div>
-	
+                
+                
+                    <div class="home-article-thumbnail">
+                        <a href="/2023/08/15/hello-world/">
+                            <img src="https://img.zcool.cn/community/01386b596eab57a8012193a3549101.jpg@1280w_1l_2o_100sh.jpg" alt="Hello World" />
+                        </a>
+                    </div>
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2023/08/15/hello-world/">
+                        Hello World
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        <p>这是主题自带的初始文章，考虑到我算是第一次使用markdown来写blog，就留下以此作为参考。This is the initial passage that the theme provides. Considering it is the first(formally) I use Markdomn to edit my blog,so I leave it for referrence</p>
+
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Aug 15 2023 18:17:13 GMT+0800">
+                
+                    2023-08-15
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/test/">test</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/demo/">demo</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/08/15/hello-world/">Read more<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
+            </li>
+        
+    </ul>
 
+    <div class="home-paginator">
+        <div class="paginator">
+    <a class="extend prev" rel="prev" href="/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+</div>
 
+    </div>
+</div>
+
+                    <div class="comment-container pjax"></div>
                 
 
             </div>
@@ -688,6 +737,7 @@
     //     document.addEventListener("DOMContentLoaded", () => init());
     // }
 </script>
+
 
 
 
