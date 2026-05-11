@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://blog.coladuck.top/"
 theme = "LoveIt"
 title = "ColaDuck 的博客"
 locale = "zh-CN"
