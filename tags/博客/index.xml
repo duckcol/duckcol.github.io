@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>博客 - 标签 - ColaDuck 的博客</title>
+        <link>https://blog.coladuck.top/tags/%E5%8D%9A%E5%AE%A2/</link>
+        <description>博客 - 标签 - ColaDuck 的博客</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 11 May 2026 15:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.coladuck.top/tags/%E5%8D%9A%E5%AE%A2/" rel="self" type="application/rss+xml" /><item>
+    <title>你好，世界！我的第一篇博客</title>
+    <link>https://blog.coladuck.top/hello-world/</link>
+    <pubDate>Mon, 11 May 2026 15:00:00 &#43;0800</pubDate>
+    <author>ColaDuck</author>
+    <guid>https://blog.coladuck.top/hello-world/</guid>
+    <description><![CDATA[<p>欢迎来到我的博客！这是使用 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer ">Hugo</a> 静态网站生成器和 <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer ">LoveIt</a> 主题搭建的个人博客。</p>
+<h2 id="为什么选择-hugo">为什么选择 Hugo？</h2>
+<p>Hugo 是一个用 Go 语言编写的静态网站生成器，具有以下优势：</p>
+<ul>
+<li><strong>极快的构建速度</strong> — 通常在毫秒级别完成构建</li>
+<li><strong>简单部署</strong> — 生成纯静态文件，可部署到任何地方</li>
+<li><strong>丰富的内容管理</strong> — 支持 Markdown、分类、标签等</li>
+<li><strong>强大的模板系统</strong> — 灵活的 Go 模板引擎</li>
+</ul>
+<h2 id="loveit-主题特性">LoveIt 主题特性</h2>
+<p>LoveIt 是一个简洁、优雅且功能丰富的 Hugo 主题，支持：</p>]]></description>
+</item>
+</channel>
+</rss>
